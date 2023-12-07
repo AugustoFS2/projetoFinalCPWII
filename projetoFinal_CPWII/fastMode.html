@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Augusto Farias dos Santos">
+    <meta name="description" content="Projeto Final da disciplina de CPW II - IFRS 2023/2">
+    <link rel="shortcut icon" type="image/png" href="./icons/mario.png"/>
+    <link rel="stylesheet" href="style/fastMode.css" />
+    <script src="script/fastMode.js" defer></script>
+    <title>Projeto Final - Fast Mode (HARD)</title>
+</head>
+
+<body id="page">
+    <div class="game-board">
+        <div>
+            <a href="index.html"><img id="back" src="images/buttonBack.png"></a>
+        </div>
+        <h3>Score: <span id="score">0</span></h3>
+        <img src="./images/mario.gif" alt="Mario" class="Mario">
+        <img src="./images/clouds.png" alt="Nuvem" class="clouds">
+        <img src="./images/pipe.png" alt="Cano" class="pipe">
+
+        <button id="start" class="restart" onclick="start();">Start</button>
+        <button id="restart" class="restart" onclick="window.location.reload();" hidden> Restart</button>
+    </div>
+
+    <footer class="rodape">
+        <span id="footerGreen">C</span><span id="footerBlue">P</span><span id="footerYellow">W</span><span id="footerBlue">I</span><span id="footerRed">I</span>
+            <span id="footerBlue">-</span>
+            <span id="footerGreen">2</span><span id="footerRed">0</span><span id="footerGreen">2</span><span id="footerBlue">3</span><span id="footerYellow">/</span><span id="footerGreen">2</span>
+            <span id="footerRed">(</span><span id="footerYellow">I</span><span id="footerBlue">F</span><span id="footerGreen">R</span><span id="footerRed">S</span><span id="footerBlue">)</span>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#page {
+    background-image: url("../images/bkgdOFC.jpg");
+}
+
+.container {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 65%;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: large;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+span {
+    border: 0;
+    text-shadow: 1px 1px 2px black, 0 0 0.2em black, 0 0 0.2em black;
+}
+
+#letraBlue {
+    color: #0addf9;
+    animation: glowingBlue 1300ms infinite;
+}
+
+@keyframes glowingBlue {
+    0% {
+      box-shadow: 0 0 5px #0addf9;
+    }
+    50% {
+      box-shadow: 0 0 20px #84edfc;
+    }
+    100% {
+      box-shadow: 0 0 5px #0addf9;
+    }
+}
+
+#letraGreen {
+    color:  #04dc04;
+    animation: glowingGreen 1300ms infinite;
+}
+
+@keyframes glowingGreen {
+    0% {
+      box-shadow: 0 0 5px #04dc04;
+    }
+    50% {
+      box-shadow: 0 0 20px #72fc72;
+    }
+    100% {
+      box-shadow: 0 0 5px #04dc04;
+    }
+}
+
+#letraRed {
+    color: #f73c3c;
+    animation: glowingRed 1300ms infinite;
+}
+
+@keyframes glowingRed {
+    0% {
+      box-shadow: 0 0 5px #f73c3c;
+    }
+    50% {
+      box-shadow: 0 0 20px #fb9d9d;
+    }
+    100% {
+      box-shadow: 0 0 5px #f73c3c;
+    }
+}
+
+#letraYellow {
+    color: #f8cd31;
+    animation: glowingYellow 1300ms infinite;
+}
+
+@keyframes glowingYellow {
+    0% {
+      box-shadow: 0 0 5px #f8cd31;
+    }
+    50% {
+      box-shadow: 0 0 20px #fbe698;
+    }
+    100% {
+      box-shadow: 0 0 5px #f8cd31;
+    }
+  }
+  
+.modeButtons {
+    background-color: #4ce42c;
+    border: 0;
+    box-shadow: inset -4px 2px 1px 1px #21780f, inset -4px -2px 1px 1px #c0f5b5, inset 4px 0px 1px 1px #c0f5b5;
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+    font-size: large;
+    height: 50px;
+    padding: 8px;
+    position: relative;
+    width: 200px;
+}
+
+
+.modeButtons:hover {
+    cursor: pointer;
+    background-color: #aff0ae;
+}
+
+.modeButtons:active {
+    top: 5px;
+    box-shadow: -4px 2px 1px 1px #21780f, -4px -2px 1px 1px #c0f5b5, 4px 0px 1px 1px #c0f5b5;
+}
+
+.modeButtons::after {
+    content: '';
+    background: black;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -2.5%;
+    width: 105%;
+    z-index: -1;
+
+}
+
+.modeButtons::before {
+    content: '';
+    background: black;
+    height: 113%;
+    position: absolute;
+    top: -5%;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+
+}
+
+.rodape {
+    font-family: 'Press Start 2P', cursive;
+    font-size:  smaller;
+    letter-spacing: 5px;
+    padding: 20px;
+}
+
+#footerBlue {
+    color: #0addf9;
+}
+
+#footerGreen {
+    color:  #04dc04;
+}
+
+#footerRed {
+    color: #f73c3c;
+}
+
+#footerYellow {
+    color: #f8cd31;
+}
